@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+    <!--Tailwind CSS CDN Link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+
+</head>
+
+<body>
+
+    <!--Offer-->
+    <div class="bg-black text-white p-1 flex gap-20 justify-center items-center" id="Offer">
+        <p>Sign Up and <b>GET 20% OFF </b>for your first Order</p>
+        <p class="text-xl pb-1 cursor-pointer" id="OfferClose">x</p>
+    </div>
+
+    <!--Responsive Navbar-->
+    <div class="flex justify-between items-center p-3 sticky top-0 z-50 bg-white">
+        <h1 class="text-black font-bold text-3xl">Nostra</h1>
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="h-6 w-6 md:hidden">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+        <div class="flex gap-5 text-gray-700 hidden md:flex">
+            <a href="index.html" class="hover:underline hover:text-black">Home</a>
+            <a href="#New_Arrivals" class="hover:underline hover:text-black">New Arrival</a>
+            <a href="#Most_Wanted" class="hover:underline hover:text-black">Most Wanted</a>
+            <a href="collections.html" class="hover:underline hover:text-black">Collections</a>
+            <a href="contact.html" class="hover:underline hover:text-black">Contact Us</a>
+        </div>
+    </div>
+
+    <!--Side navbar-->
+    <div id="sidenav" class="fixed z-50 top-0 transition-all duration-1000 bg-gray-300" style="width: 40%; height: 100vh; left: -50%;">
+        <div class="text-right p-5 text-gray-800">
+            <p id="closenav" class="inline cursor-pointer">X</p>
+        </div>
+        <div class="flex flex-col gap-10 items-center text-gray-700">
+            <a href="index.html" class="hover:underline hover:text-black">Home</a>
+            <a href="#New_Arrivals" class="hover:underline hover:text-black">New Arrival</a>
+            <a href="#Most_Wanted" class="hover:underline hover:text-black">Most Wanted</a>
+            <a href="collections.html" class="hover:underline hover:text-black">Collections</a>
+            <a href="contact.html" class="hover:underline hover:text-black">Contact Us</a>
+        </div>
+    </div>
+
+    <!--Sale Image-->
+    <div class="slider-container">
+        <div class="slider-list">
+            <div class="slider-img">
+                <img src="./images/sale1.jpg" alt="">
+            </div>
+            <div class="slider-img ">
+                <img src="./images/sale2.jpg" alt="">
+            </div>
+            <div class="slider-img">
+                <img src="./images/sale3.jpg" alt="">
+            </div>
+        </div>
+        <div id="slider" class="justify-center text-center p-5 rounded ml-1 mr-1 pt-24 z-30"
+            style="position: absolute;  width: 1520px;">
+            <h1 class=" text-white text-7xl font-bold pb-5">Level up your style with our</h1>
+            <p class="text-white font-bold text-lg pb-2">Summer Collections</p>
+            <button class="bg-white pt-2 pb-2 pr-5 pl-5 ">Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+            <img src="./images/back-arrow (1).png" alt="" class="w-32 h-32 z-40"
+                style="position: relative; bottom: 120px; left: 50px;" id="leftArrow">
+            <img src="./images/right-arrow (1).png" alt="" class="w-32 h-32 z-40"
+                style="position: relative; bottom: 250px; left: 87%" id="rightArrow">
+        </div>
+    </div>
+
+    <!--Brands-->
+    <div class="m-3 mt-5">
+        <h1 class="text-black text-2xl font-bold mt-14">Brands</h1>
+        <div class="text-center mt-7 flex justify-between items-center m-3 mb-20">
+            <div class="flex flex-col text-center items-center">
+                <img src="./images/simple.png" alt="" class="w-12 h-12">
+                <h1 class="text-xl">Simple</h1>
+            </div>
+            <div class="flex flex-col text-center items-center">
+                <img src="./images/adidas.png" alt="" class=" w-12 h-12">
+                <h1 class="text-xl">Adidas</h1>
+            </div>
+            <div class="flex flex-col text-center items-center">
+                <img src="./images/nike.png" alt="" class="w-12 h-12">
+                <h1 class="text-xl">Nike</h1>
+            </div>
+            <div class="flex flex-col text-center items-center">
+                <img src="./images/tencent.png" alt="" class="w-12 h-12">
+                <h1 class="text-xl">Tencent</h1>
+            </div>
+            <div class="flex flex-col text-center items-center">
+                <img src="./images/adidas-black.png" alt="" class="w-12 h-12">
+                <h1 class="text-xl">iStock</h1>
+            </div>
+            <div class="flex flex-col text-center items-center">
+                <img src="./images/social.png" alt="" class="w-12 h-12">
+                <h1 class="text-xl">Awesome</h1>
+            </div>
+            <div class="flex flex-col text-center items-center">
+                <img src="./images/m.png" alt="" class="w-12 h-12">
+                <h1 class="text-xl">Meesho</h1>
+            </div>
+        </div>
+    </div>
+
+    <!--Customer Experiences-->
+    <div class="">
+        <div class="flex justify-between m-3 items-center">
+            <h1 class="text-4xl font-bold">We Provide Best<br>Customer Experiences</h1>
+            <h1 class="text-xl">|| We ensure that our customer have the best shopping experience</h1>
+        </div>
+        <div class="flex gap-3 m-5">
+            <div class="rounded bg-gray-200 p-4">
+                <i class="fa-regular fa-circle-check fa-2xl" style="color: #000000;"></i>
+                <h1 class="text-xl font-bold mt-4">Original Products</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sint est ut nulla dolorem cum!</p>
+            </div>
+            <div class="rounded bg-gray-200 p-4">
+                <i class="fa-regular fa-face-smile fa-2xl" style="color: #000000;"></i>
+                <h1 class="text-xl font-bold mt-4">Satisfaction Guarantee</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sint est ut nulla dolorem cum!</p>
+            </div>
+            <div class="rounded bg-gray-200 p-4">
+                <i class="fa-solid fa-broom fa-2xl" style="color: #000000;"></i>
+                <h1 class="text-xl font-bold mt-4">New Arrival Everyday</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sint est ut nulla dolorem cum!</p>
+            </div>
+            <div class="rounded bg-gray-200 p-4">
+                <i class="fa-solid fa-truck-fast fa-2xl" style="color: #000000;"></i>
+                <h1 class="text-xl font-bold mt-4">Fast & Free Shipping</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sint est ut nulla dolorem cum!</p>
+            </div>
+        </div>
+    </div>
+
+    <!--New Arrivals-->
+    <div class="mt-10 mb-10" id="New_Arrivals">
+        <h1 class="font-bold text-2xl mt-5 mb-5 text-black m-4">New Arrivals</h1>
+        <div class="grid grid-cols-4 gap-16 m-10 ml-16">
+            <div class="relative">
+                <img src="./images/design_shirt2.jpg" alt="" class="w-64 h-72 z-10 rounded-lg">
+                <div class="bg-black w-64 h-72 z-20 rounded-md" style="position: absolute; bottom: 1px; opacity: 0.5;">
+                </div>
+                <div>
+                    <button class="bg-white pt-2 pb-2 pr-5 pl-5 rounded-lg z-30 "
+                        style="position: absolute; bottom: 70px; left: 65px;">Shop Now <i
+                            class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+            <div class="relative">
+                <img src="./images/pant.jpg" alt="" class="w-64 h-72 z-10 rounded-lg">
+                <div class="bg-black w-64 h-72 z-20 rounded-md" style="position: absolute; bottom: 1px; opacity: 0.5;">
+                </div>
+                <div>
+                    <button class="bg-white pt-2 pb-2 pr-5 pl-5 rounded-lg z-30 "
+                        style="position: absolute; bottom: 70px; left: 65px;">Shop Now <i
+                            class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+            <div class="relative">
+                <img src="./images/double_pocket_shirt.jpg" alt="" class="w-64 h-72 z-10 rounded-lg">
+                <div class="bg-black w-64 h-72 z-20 rounded-md" style="position: absolute; bottom: 1px; opacity: 0.5;">
+                </div>
+                <div>
+                    <button class="bg-white pt-2 pb-2 pr-5 pl-5 rounded-lg z-30 "
+                        style="position: absolute; bottom: 70px; left: 65px;">Shop Now <i
+                            class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+            <div class="relative">
+                <img src="./images/shirt.jpg" alt="" class="w-64 h-72 z-10 rounded-lg">
+                <div class="bg-black w-64 h-72 z-20 rounded-md" style="position: absolute; bottom: 1px; opacity: 0.5;">
+                </div>
+                <div>
+                    <button class="bg-white pt-2 pb-2 pr-5 pl-5 rounded-lg z-30 "
+                        style="position: absolute; bottom: 70px; left: 65px;">Shop Now <i
+                            class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--Most Wanted-->
+    <div class="mt-16 m-4" id="Most_Wanted">
+        <h1 class="font-bold text-2xl mt-10 mb-5 text-black">Most Wanted</h1>
+        <div style="overflow-x: scroll; scrollbar-width: none;">
+            <div class="grid grid-cols-8 gap-24 m-5 mt-10" style="width: max-content;">
+                <div class="relative">
+                    <div class="bg-gray-100 w-64 h-72 z-20 rounded-md" style=" bottom: 1px; ">
+                    </div>
+                    <img src="./images/shirt2-removebg-preview.png" alt="" class="w-48 h-64 z-40 rounded-lg absolute"
+                        style="bottom: 20px; left: 30px;">
+                    <div class="z-50">
+                        <button class="text-white bg-red-600 text-xl p-1 pr-2 pl-2 rounded absolute"
+                            style="bottom: 252px;">Sale</button>
+                        <img src="./images/heart.png" alt=""
+                            style="width: 30px; height: 30px; position:absolute; bottom: 25px; left: 200px;">
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="bg-gray-100 w-64 h-72 z-20 rounded-md" style=" bottom: 1px; ">
+                    </div>
+                    <img src="./images/shirt3-removebg-preview.png" alt="" class="w-48 h-64 z-40 rounded-lg absolute"
+                        style="bottom: 20px; left: 30px;">
+                    <div class="z-50">
+                        <button class="text-white bg-red-600 text-xl p-1 pr-2 pl-2 rounded absolute"
+                            style="bottom: 252px;">Sale</button>
+                        <img src="./images/heart.png" alt=""
+                            style="width: 30px; height: 30px; position:absolute; bottom: 25px; left: 200px;">
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="bg-gray-100 w-64 h-72 z-20 rounded-md" style=" bottom: 1px; ">
+                    </div>
+                    <img src="./images/shirt1-removebg-preview.png" alt="" class="w-48 h-64 z-40 rounded-lg absolute"
+                        style="bottom: 20px; left: 30px;">
+                    <div class="z-50">
+                        <button class="text-white bg-red-600 text-xl p-1 pr-2 pl-2 rounded absolute"
+                            style="bottom: 252px;">Sale</button>
+                        <img src="./images/heart.png" alt=""
+                            style="width: 30px; height: 30px; position:absolute; bottom: 25px; left: 200px;">
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="bg-gray-100 w-64 h-72 z-20 rounded-md" style=" bottom: 1px; ">
+                    </div>
+                    <img src="./images/design_shirt1-removebg-preview.png" alt=""
+                        class="w-48 h-64 z-40 rounded-lg absolute" style="bottom: 20px; left: 30px;">
+                    <div class="z-50">
+                        <button class="text-white bg-red-600 text-xl p-1 pr-2 pl-2 rounded absolute"
+                            style="bottom: 252px;">Sale</button>
+                        <img src="./images/heart.png" alt=""
+                            style="width: 30px; height: 30px; position:absolute; bottom: 25px; left: 200px;">
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="bg-gray-100 w-64 h-72 z-20 rounded-md" style=" bottom: 1px; ">
+                    </div>
+                    <img src="./images/design_shirt-removebg-preview.png" alt=""
+                        class="w-48 h-64 z-40 rounded-lg absolute" style="bottom: 20px; left: 30px;">
+                    <div class="z-50">
+                        <button class="text-white bg-red-600 text-xl p-1 pr-2 pl-2 rounded absolute"
+                            style="bottom: 252px;">Sale</button>
+                        <img src="./images/heart.png" alt=""
+                            style="width: 30px; height: 30px; position:absolute; bottom: 25px; left: 200px;">
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="bg-gray-100 w-64 h-72 z-20 rounded-md" style=" bottom: 1px; ">
+                    </div>
+                    <img src="./images/shirt4-removebg-preview.png" alt="" class="w-48 h-64 z-40 rounded-lg absolute"
+                        style="bottom: 20px; left: 30px;">
+                    <div class="z-50">
+                        <button class="text-white bg-red-600 text-xl p-1 pr-2 pl-2 rounded absolute"
+                            style="bottom: 252px;">Sale</button>
+                        <img src="./images/heart.png" alt=""
+                            style="width: 30px; height: 30px; position:absolute; bottom: 25px; left: 200px;">
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="bg-gray-100 w-64 h-72 z-20 rounded-md" style=" bottom: 1px; ">
+                    </div>
+                    <img src="./images/coconut_shirt-removebg-preview.png" alt=""
+                        class="w-48 h-64 z-40 rounded-lg absolute" style="bottom: 20px; left: 30px;">
+                    <div class="z-50">
+                        <button class="text-white bg-red-600 text-xl p-1 pr-2 pl-2 rounded absolute"
+                            style="bottom: 252px;">Sale</button>
+                        <img src="./images/heart.png" alt=""
+                            style="width: 30px; height: 30px; position:absolute; bottom: 25px; left: 200px;">
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="bg-gray-100 w-64 h-72 z-20 rounded-md" style=" bottom: 1px; ">
+                    </div>
+                    <img src="./images/goaShirt-removebg-preview.png" alt="" class="w-48 h-64 z-40 rounded-lg absolute"
+                        style="bottom: 20px; left: 30px;">
+                    <div class="z-50">
+                        <button class="text-white bg-red-600 text-xl p-1 pr-2 pl-2 rounded absolute"
+                            style="bottom: 252px;">Sale</button>
+                        <img src="./images/heart.png" alt=""
+                            style="width: 30px; height: 30px; position:absolute; bottom: 25px; left: 200px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Limited Offer-->
+    <div class="flex  bg-gray-800 mt-10 m-3 items-center gap-10" style="height: 400px;">
+        <div class="m-12">
+            <img src="./images/offer_image.jpg" alt="" style="width: 700px; height: 370px;">
+        </div>
+        <div class="">
+            <h1 class="text-white text-5xl font-bold mb-5">Limited Offer</h1>
+            <p class="text-white font-bold text-2xl mb-5">35% OFF on this for the first 30 Customers</p>
+            <button class="bg-white pt-2 pb-2 pr-5 pl-5 rounded-md">Shop Now <i
+                    class="fa-solid fa-arrow-right"></i></button>
+
+        </div>
+    </div>
+
+    <!--News Letter-->
+    <div class="text-center mt-16 mb-16">
+        <h1 class="text-center font-bold text-4xl mb-3">Join our News Letter</h1>
+        <p class="text-2xl">Signup for our email newspaper to get exclusive discounts, updates, and more</p>
+        <input type="text" class="border-2 border-black p-2 m-3" style="width: 70%;"><br>
+        <button class="bg-black text-white text-xl p-2 m-1 rounded-lg">Subcribe <i
+                class="fa-solid fa-arrow-right"></i></button>
+    </div>
+
+    <!--Footer-->
+    <div class="mt-10 flex flex-col gap-2 bg-gray-800 p-7">
+        <h1 class="text-white text-4xl font-bold">Nostra</h1>
+        <p class="text-white text-xl">The Standare chunk of Nostra Clothes used since 1500s is reproduced below for
+            those interested</p>
+        <div class="flex gap-12 m-6">
+            <i class="fa-brands fa-instagram fa-xl" style="color: #ffffff;"></i>
+            <i class="fa-brands fa-twitter fa-xl" style="color: #ffffff;"></i>
+            <i class="fa-brands fa-facebook fa-xl" style="color: #ffffff;"></i>
+        </div>
+        <p class="text-white text-xl">@ 2024 Nostra.com</p>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+
+
+
+
+</html>

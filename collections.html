@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collections</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!--Offer-->
+    <div class="bg-black text-white p-1 flex gap-20 justify-center items-center" id="Offer">
+        <p>Sign Up and <b>GET 20% OFF </b>for your first Order</p>
+        <p class="text-xl pb-1 cursor-pointer" id="OfferClose">x</p>
+    </div>
+
+    <!--Responsive Navbar-->
+    <div class="flex justify-between items-center p-3 sticky top-0 z-40 bg-white">
+        <h1 class="text-black font-bold text-3xl">Nostra</h1>
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="h-6 w-6 md:hidden">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+        <div class="flex gap-5 text-gray-700 hidden md:flex">
+            <a href="index.html" class="hover:underline hover:text-black">Home</a>
+            <a href="#New_Arrivals" class="hover:underline hover:text-black">New Arrival</a>
+            <a href="#Most_Wanted" class="hover:underline hover:text-black">Most Wanted</a>
+            <a href="collections.html" class="hover:underline hover:text-black">Collections</a>
+            <a href="contact.html" class="hover:underline hover:text-black">Contact Us</a>
+        </div>
+    </div>
+
+    <!--Side navbar-->
+    <div id="sidenav" class="fixed z-50 top-0 transition-all duration-1000 bg-gray-300" style="width: 40%; height: 100vh; left: -50%;">
+        <div class="text-right p-5 text-gray-800">
+            <p id="closenav" class="inline cursor-pointer">X</p>
+        </div>
+        <div class="flex flex-col gap-10 items-center text-gray-700">
+            <a href="index.html" class="hover:underline hover:text-black">Home</a>
+            <a href="#New_Arrivals" class="hover:underline hover:text-black">New Arrival</a>
+            <a href="#Most_Wanted" class="hover:underline hover:text-black">Most Wanted</a>
+            <a href="collections.html" class="hover:underline hover:text-black">Collections</a>
+            <a href="contact.html" class="hover:underline hover:text-black">Contact Us</a>
+        </div>
+    </div>
+
+
+    <!--Collections-->
+    <div class="flex m-5 ">
+        <div id="checkContainer" style="flex-grow: 1;">
+            <div class="text-xl" data-tags="summer,party,beach">
+                <h1 class="font-bold text-2xl">Occasion</h1>
+                <input type="checkbox" value="summer" class="check"> Summer <br>
+                <input type="checkbox" value="party" class="check"> Party <br>
+                <input type="checkbox" value="Beach" class="check"> Beach
+            </div>
+            <div class="text-xl mt-5">
+                <h1 class="font-bold text-2xl">Colors</h1>
+                <input type="checkbox" value="red" class="check"> Red <br>
+                <input type="checkbox" value="blue" class="check"> Blue <br>
+                <input type="checkbox" value="white" class="check"> White <br>
+                <input type="checkbox" value="green" class="check"> Green
+            </div>
+            <div class="text-xl mt-5">
+                <h1 class="font-bold text-2xl">Arrivals</h1>
+                <input type="checkbox" value="new" class="check"> New <br>
+                <input type="checkbox" value="old" class="check"> Old
+            </div>
+        </div>
+        <div class="bg-black w-0.5"></div>
+        <div class="" style="flex-grow: 3;">
+            <div class="flex justify-center">
+                <div class="flex justify-between items-center m-2 p-2 pr-2 pl-2 border border-black rounded" style="width: 80%;">
+                    <input id="search" type="text" placeholder="Search for a Collections..." style="outline: none; width: 100%;">
+                    <i class="fa-solid fa-magnifying-glass fa-xl" style="color: #000000;"></i>
+                </div>
+            </div>
+            <div id="collectionContainer" class="grid grid-cols-2 md:grid-cols-3 mt-5 gap-5">
+                <div class="text-center" data-tags="new, summer, blue">
+                    <img src="./images/shirt4-removebg-preview.png" alt=""
+                        class="w-64 h-72 inline hover:shadow-xl transform hover:-translate-y-2 bg-gray-200">
+                    <h1>Summer Blue</h1>
+                    <p>₹250</p>
+                </div>
+                <div class="text-center" data-tags="old,beach">
+                    <img src="./images/shirt3-removebg-preview.png" alt=""
+                        class="w-64 h-72 inline hover:shadow-xl transform hover:-translate-y-2  bg-gray-200">
+                    <h1>Beach Shirt</h1>
+                    <p>₹300</p>
+                </div>
+                <div class="text-center" data-tags="new,party">
+                    <img src="./images/design_shirt2-removebg.png" alt=""
+                        class="w-64 h-72 inline hover:shadow-xl transform hover:-translate-y-2  bg-gray-200">
+                    <h1>Party Floral Shirt</h1>
+                    <p>₹300</p>
+                </div>
+                <div class="text-center" data-tags="old,party">
+                    <img src="./images/design_shirt1-removebg-preview.png" alt=""
+                        class="w-64 h-72 inline hover:shadow-xl transform hover:-translate-y-2  bg-gray-200">
+                    <h1>Party Shirt</h1>
+                    <p>₹300</p>
+                </div>
+                <div class="text-center" data-tags="old,beach,blue">
+                    <img src="./images/design_shirt-removebg-preview.png" alt=""
+                        class="w-64 h-72 inline hover:shadow-xl transform hover:-translate-y-2  bg-gray-200">
+                    <h1>Beach Blue Shirt</h1>
+                    <p>₹200</p>
+                </div>
+                <div class="text-center" data-tags="new,green,summer">
+                    <img src="./images/shirt5-removebg-preview.png" alt=""
+                        class="w-64 h-72 inline hover:shadow-xl transform hover:-translate-y-2  bg-gray-200">
+                    <h1>Summer Green</h1>
+                    <p>₹250</p>
+                </div>
+                <div class="text-center" data-tags="new,beach,white">
+                    <img src="./images/goaShirt-removebg-preview.png" alt=""
+                        class="w-64 h-72 inline hover:shadow-xl transform hover:-translate-y-2  bg-gray-200">
+                    <h1>Beach White Shirt</h1>
+                    <p>₹250</p>
+                </div>
+                <div class="text-center" data-tags="old,summer,red">
+                    <img src="./images/shirt-removebg-preview.png" alt=""
+                        class="w-64 h-72 inline hover:shadow-xl transform hover:-translate-y-2  bg-gray-200">
+                    <h1>Summer Red</h1>
+                    <p>₹300</p>
+                </div>
+                <div class="text-center" data-tags="old,beach">
+                    <img src="./images/design_shirt1-removebg-preview.png" alt=""
+                        class="w-64 h-72 inline hover:shadow-xl transform hover:-translate-y-2  bg-gray-200">
+                    <h1>Beach Shirt</h1>
+                    <p>₹200</p>
+                </div>
+                <div class="text-center" data-tags="new,party,green">
+                    <img src="./images/shirt7-removebg-preview.png" alt=""
+                        class="w-64 h-72 inline hover:shadow-xl transform hover:-translate-y-2  bg-gray-200">
+                    <h1>Party Green</h1>
+                    <p>₹400</p>
+                </div>
+                <div class="text-center" data-tags="new,summer,black">
+                    <img src="./images/shirt1-removebg-preview.png" alt=""
+                        class="w-64 h-72 inline hover:shadow-xl transform hover:-translate-y-2  bg-gray-200">
+                    <h1>Summer Black</h1>
+                    <p>₹250</p>
+                </div>
+                <div class="text-center" data-tags="new,party,white">
+                    <img src="./images/shirt6-removebg-preview.png" alt=""
+                        class="w-64 h-72 inline hover:shadow-xl transform hover:-translate-y-2  bg-gray-200">
+                    <h1>Party White</h1>
+                    <p>₹400</p>
+                </div>
+                <div class="text-center" data-tags="old,summer">
+                    <img src="./images/shirt2-removebg-preview.png" alt=""
+                        class="w-64 h-72 inline hover:shadow-xl transform hover:-translate-y-2  bg-gray-200">
+                    <h1>Summer Off White</h1>
+                    <p>₹250</p>
+                </div>
+                <div class="text-center" data-tags="new,party">
+                    <img src="./images/shirt3-removebg-preview.png" alt=""
+                        class="w-64 h-72 inline hover:shadow-xl transform hover:-translate-y-2  bg-gray-200">
+                    <h1>Party Pink Shirt</h1>
+                    <p>₹300</p>
+                </div>
+                <div class="text-center" data-tags="new,party,red">
+                    <img src="./images/shirt-removebg-preview.png" alt=""
+                        class="w-64 h-72 inline hover:shadow-xl transform hover:-translate-y-2  bg-gray-200">
+                    <h1>Party Red Shirt</h1>
+                    <p>₹250</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!--Footer-->
+    <div class="mt-10 flex flex-col gap-2 bg-gray-800 p-7">
+        <h1 class="text-white text-4xl font-bold">Nostra</h1>
+        <p class="text-white text-xl">The Standare chunk of Nostra Clothes used since 1500s is reproduced below for
+            those interested</p>
+        <div class="flex gap-12 m-6">
+            <i class="fa-brands fa-instagram fa-xl" style="color: #ffffff;"></i>
+            <i class="fa-brands fa-twitter fa-xl" style="color: #ffffff;"></i>
+            <i class="fa-brands fa-facebook fa-xl" style="color: #ffffff;"></i>
+        </div>
+        <p class="text-white text-xl">@ 2024 Nostra.com</p>
+    </div>
+
+
+    <script src="collections.js"></script>
+</body>
+</body>
+
+</html>
