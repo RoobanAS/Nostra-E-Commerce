@@ -28,10 +28,3 @@ html {
     /* filter: blur(2px); */
 }
 
-
-/* Media Queries */
-@media screen and (min-width:800px) {
-    #slider{
-        
-    }
-}
