@@ -29,3 +29,9 @@ html {
 }
 
 
+/* Media Queries */
+@media screen and (min-width:800px) {
+    #slider{
+        width: fit-content;
+    }
+}
