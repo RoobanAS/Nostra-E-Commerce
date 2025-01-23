@@ -2,36 +2,150 @@ html {
     scroll-behavior: smooth;
 }
 
-.slider-container{
-    width: 1519px;
+.slider-container {
+    width: 100%; 
     max-width: 100vw;
     height: 500px;
     position: relative;
     overflow: hidden;
 }
 
-.slider-list{
+.slider-list {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     display: flex;
     width: max-content;
-    transition: 2s;
+    transition: transform 2s ease-in-out;
 }
 
-.slider-list img{
-    width: 1519px;
+.slider-list img {
+    width: 100%; 
     max-width: 100vw;
-    height: 100%;
-    /* object-fit: cover; */
-    /* filter: blur(2px); */
+    height: 100%; 
+    object-fit: cover; 
 }
 
+
+#slider {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    padding: 1rem;
+    z-index: 30;
+}
+
+#slider h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#slider p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+#slider button {
+    background: white;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+#leftArrow,
+#rightArrow {
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 40;
+}
+
+#leftArrow {
+    left: 1rem;
+}
+
+#rightArrow {
+    right: 1rem;
+}
 
 /* Media Queries */
-@media screen and (min-width:800px) {
-    #slider{
-        
+@media screen and (max-width: 1024px) {
+    .slider-container {
+        height: 400px;
+    }
+
+    #slider h1 {
+        font-size: 1.2rem;
+    }
+
+    #slider p {
+        font-size: 1rem;
+    }
+
+    #slider button {
+        font-size: 0.9rem;
+    }
+
+    #leftArrow,
+    #rightArrow {
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .slider-container {
+        height: 300px;
+    }
+
+    #slider h1 {
+        font-size: 1rem;
+    }
+
+    #slider p {
+        font-size: 0.9rem;
+    }
+
+    #slider button {
+        font-size: 0.8rem;
+    }
+
+    #leftArrow,
+    #rightArrow {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .slider-container {
+        height: 250px;
+    }
+
+    #slider h1 {
+        font-size: 0.9rem;
+    }
+
+    #slider p {
+        font-size: 0.8rem;
+    }
+
+    #slider button {
+        font-size: 0.7rem;
+    }
+
+    #leftArrow,
+    #rightArrow {
+        width: 1.2rem;
+        height: 1.2rem;
     }
 }
