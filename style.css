@@ -29,91 +29,9 @@ html {
 }
 
 
-#slider {
-    position: absolute;
-    width: 100%; /* Adjust slider text container width */
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 30;
-    text-align: center;
-    padding: 2rem 1rem;
-}
-
-#slider h1 {
-    font-size: 1.5rem; /* Responsive font size */
-    margin-bottom: 1rem;
-}
-
-#slider p {
-    font-size: 1.2rem; /* Responsive font size */
-    margin-bottom: 1rem;
-}
-
-#slider button {
-    background: white;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    cursor: pointer;
-    border: none;
-    border-radius: 5px;
-    display: inline-flex;
-    align-items: center;
-}
-
-#slider button i {
-    margin-left: 0.5rem;
-}
-
-#leftArrow,
-#rightArrow {
-    width: 2rem;
-    height: 2rem;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-    z-index: 40;
-}
-
-#leftArrow {
-    left: 1rem;
-}
-
-#rightArrow {
-    right: 1rem;
-}
-
-/* Media Queries for Responsive Design */
-@media (max-width: 768px) {
-    #slider h1 {
-        font-size: 1.2rem;
-    }
-
-    #slider p {
-        font-size: 1rem;
-    }
-
-    #slider button {
-        font-size: 0.9rem;
-    }
-
-    #leftArrow,
-    #rightArrow {
-        width: 1.5rem;
-        height: 1.5rem;
-    }
-}
-
-@media (max-width: 480px) {
-    #slider h1 {
-        font-size: 1rem;
-    }
-
-    #slider p {
-        font-size: 0.9rem;
-    }
-
-    #slider button {
-        font-size: 0.8rem;
+/* Media Queries */
+@media screen and (min-width:800px) {
+    #slider{
+        
     }
 }
